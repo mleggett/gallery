@@ -1,5 +1,5 @@
 import Images from './components/Images'
-import thumbnails_data from './data/thumbnails'
+import image_data from './data/image_data'
 import './App.css';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
        <h1>Gallery</h1>
-       <Images data={thumbnails_data} />
+       <Images data={image_data} />
       </header>
     </div>
   );
