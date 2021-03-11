@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function Thumbnails({data}) {
+function Images({data}) {
 
   const [detail, setDetail] = useState(null)
 
@@ -33,7 +33,7 @@ function Thumbnails({data}) {
             <div className="detail-close">X</div>
           </div>
           <div className="detail-content">
-            <img src={data[detail].src} alt={data[detail].title} />
+            <img src={data[detail].largeSrc} alt={data[detail].title} />
           </div>
         </div>
         }
@@ -41,4 +41,4 @@ function Thumbnails({data}) {
   )
 }
 
-export default Thumbnails
+export default Images

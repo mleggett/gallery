@@ -18,8 +18,8 @@ body {
 }
 
 .thumbnail {
-  width: 33%;
-  border: 1px solid #fff;
+  width: calc(100%/3 - 6px);
+  border: 3px solid #fff;
   flex: 1 1 auto;
   height: 30%;
   background-color: #ccc;
