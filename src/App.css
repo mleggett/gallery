@@ -1,5 +1,6 @@
 body {
   box-sizing: border-box;
+  --default-transition: all 0.2s ease-in;
 }
 
 .App {
@@ -23,7 +24,7 @@ body {
   height: 30%;
   background-color: #ccc;
   cursor: pointer;
-  transition: all 0.2s ease-in;
+  transition: var(--default-transition);
 }
 
 .thumbnail:hover {
@@ -46,6 +47,12 @@ body {
   font-size: 2rem;
   font-weight: bold;
   color: #333;
+  cursor: pointer;
+}
+
+.detail-close:hover {
+  opacity: 0.6;
+  transition: var(--default-transition)
 }
 
 .detail-content {
